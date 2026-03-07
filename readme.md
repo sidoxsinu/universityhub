@@ -39,9 +39,9 @@ manage.py           # Django command-line utility
    python -m venv venv
    venv\Scripts\activate    # Windows
    ```
-3. **Install dependencies**
+3. **Install dependencies from `requirements.txt`**
    ```bash
-   pip install django whitenoise
+   pip install -r requirements.txt
    ```
 4. **Apply migrations**
    ```bash
