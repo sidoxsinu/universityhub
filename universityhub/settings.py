@@ -26,8 +26,7 @@ SECRET_KEY = 'django-insecure-mdeb1)6))t-k@mem@_byr%@#vm^bnhcl#cs1^8=^=5nzebr^#e
 DEBUG = True
 
 # settings.py
-ALLOWED_HOSTS = ['universityhub-jn20.onrender.com', 'universityhub-3.onrender.com', 'university-hub-dfru.onrender.com', 'localhost', '127.0.0.1']
-
+ALLOWED_HOSTS = ['.onrender.com', 'localhost', '127.0.0.1']
 CSRF_TRUSTED_ORIGINS = ['https://universityhub-jn20.onrender.com', 'https://universityhub-3.onrender.com', 'https://university-hub-dfru.onrender.com']
 
 
