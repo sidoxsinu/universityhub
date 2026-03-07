@@ -27,8 +27,11 @@ DEBUG = True
 
 # settings.py
 ALLOWED_HOSTS = ['.onrender.com', 'localhost', '127.0.0.1']
-CSRF_TRUSTED_ORIGINS = ['https://universityhub-jn20.onrender.com', 'https://universityhub-3.onrender.com', 'https://university-hub-dfru.onrender.com']
-
+CSRF_TRUSTED_ORIGINS = [
+    "https://universityhub-jn20.onrender.com",
+    "https://universityhub-3.onrender.com",
+    "https://university-hub-dfru.onrender.com",
+]
 
 # Application definition
 
