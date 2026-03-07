@@ -13,7 +13,7 @@ body {
     align-items: center;
     
     /* Background Image Setup */
-    background-image: url('/static/css/snow-mountains-3840x2160-25476.jpg');
+    background-image: url('snow-mountains-3840x2160-25476.jpg');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
