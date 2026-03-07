@@ -1,0 +1,34 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>Departments</title>
+<link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>Departments</h1>
+
+{% for i in departments %}
+
+<div class="department-card">
+
+<strong>{{ i.name }}</strong><br>
+Head: {{ i.head_of_department }}<br>
+{{ i.description }}
+
+</div>
+
+{% endfor %}
+
+<a href="/">Back</a>
+
+</div>
+
+</body>
+</html>
