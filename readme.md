@@ -41,7 +41,7 @@ manage.py           # Django command-line utility
    ```
 3. **Install dependencies**
    ```bash
-   pip install django
+   pip install django whitenoise
    ```
 4. **Apply migrations**
    ```bash
@@ -56,7 +56,30 @@ manage.py           # Django command-line utility
    python manage.py runserver
    ```
 
-Access the site at `http://127.0.0.1:8000/` and navigate to the student registration and departments pages.
+Access the site at `http://127.0.0.1:8000/` (development) or deployed at [https://university-hub-dfru.onrender.com/](https://university-hub-dfru.onrender.com/). Navigate to the student registration and departments pages.
+
+## Deployment
+
+For production deployment (e.g., on Render):
+
+1. Install additional dependencies:
+   ```bash
+   pip install whitenoise
+   ```
+
+2. Update `universityhub/settings.py`:
+   - Set `DEBUG = False`
+   - Add your deployment domain to `ALLOWED_HOSTS`
+   - Add your domain with https to `CSRF_TRUSTED_ORIGINS`
+   - Add `'whitenoise'` to `INSTALLED_APPS`
+   - Add `'whitenoise.middleware.WhiteNoiseMiddleware'` to `MIDDLEWARE` after `SecurityMiddleware`
+
+3. Run collectstatic:
+   ```bash
+   python manage.py collectstatic
+   ```
+
+4. Deploy to your platform (e.g., Render, Heroku)
 
 ## Usage
 
