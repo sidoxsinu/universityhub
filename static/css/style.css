@@ -60,7 +60,7 @@ a {
     padding: 10px 24px;
     border-radius: 40px;
     text-decoration: none;
-    font-family: 'Telma', cursive;
+    font-family: 'Montserrat', sans-serif;
     font-size: 0.95rem;
     color: #ffffff; 
     background: #000000; 
@@ -99,10 +99,12 @@ a:hover {
 .login-btn {
     display: inline-block;
     margin: 16px;
+    width: 95px;
+    position: center;
     padding: 10px 170px;
     border-radius: 40px;
     text-decoration: none;
-    font-family: 'Telma', cursive;
+    font-family: 'Montserrat', sans-serif;
     font-size: 0.95rem;
     color: #ffffff; 
     background: #000500; 
