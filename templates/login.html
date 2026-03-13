@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+<head>
+    <title>University Hub Login</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>University Hub Login</h1>
+
+<form method="post">
+    {% csrf_token %}
+    
+    <label>Username:</label><br>
+    {{ form.username }}<br><br>
+
+    <label>Password:</label><br>
+    {{ form.password }}<br><br>
+
+    <button type="submit">Login</button>
+</form>
+
+<p>Don't have an account?</p>
+<a href="/student_registration/">Register</a>
+
+</div>
+
+</body>
+</html>
