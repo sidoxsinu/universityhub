@@ -21,11 +21,11 @@
     <label>Password:</label><br>
     {{ form.password }}<br><br>
 
-    <button type="submit">Login</button>
+    <a href="{% url 'home' %}" class="login-btn">Login</a>
 </form>
 
 <p>Don't have an account?</p>
-<a href="/student_registration/">Register</a>
+<a href="/register/">Register</a>
 
 </div>
 

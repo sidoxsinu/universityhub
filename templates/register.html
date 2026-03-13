@@ -1,0 +1,35 @@
+{% load static %}
+{% block content %}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>University Hub Registration</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+<div class="container">
+<h1>University Hub Registration</h1>
+<form method="post">
+    {% csrf_token %}
+    
+    <label>Username:</label><br>
+    {{ form.username }}<br><br>
+
+    <label>Password:</label><br>
+{{ form.password }}
+<br><br>
+
+    <label>Confirm Password:</label><br>
+{{ form.confirm_password }}
+
+<p class="password-help">
+Password must:
+<br>• Be at least 8 characters long
+<br>• Contain letters and numbers
+<br>• Not be too common
+</p><br><button type="submit" class="login-btn">Register</button>
+</form>
+</div>
+</body>
+</html>
+{% endblock %}

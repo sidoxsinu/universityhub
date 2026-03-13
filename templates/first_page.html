@@ -1,0 +1,15 @@
+<!doctype html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>University Hub</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+<div class="container">
+    <h1>Welcome to University Hub</h1>
+    <p>Your gateway to academic excellence and campus life.</p>
+    <a href="{% url 'login' %}" class="login-btn">Enter Portal</a>
+</div>

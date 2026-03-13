@@ -27,7 +27,10 @@
 
 <a href="{% url 'student_registration' %}">Students</a>
 
-<a href="{% url 'login' %}" class="login-btn">Login</a>
+<form action="{% url 'logout' %}" method="post">
+    {% csrf_token %}
+    <button type="submit" class="login-btn">Logout</button>
+</form>
 
 </div>
 

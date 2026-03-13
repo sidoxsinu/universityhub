@@ -1,9 +1,22 @@
-{% extends "base.html" %}
+{% load static %}
+<!DOCTYPE html>
+<html>
 
-{% block content %}
+<head>
+<title>Logged Out</title>
+<link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
 
-<h2>You have logged out</h2>
+<body>
 
-<a href="{% url 'login' %}">Login again</a>
+<!-- Logout Content -->
+<div class="container">
 
-{% endblock %}
+<h1>You have logged out</h1>
+
+<a href="{% url 'first_page' %}" class="login-btn">Login again</a>
+
+</div>
+
+</body>
+</html>
